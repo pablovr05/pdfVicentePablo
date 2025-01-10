@@ -47,15 +47,19 @@ def cargar_json():
 def draw_titles(c, pre_title_text, title_text, style, pre_title_style, x, y, width):
     # Afegir pre-títol
     preP = Paragraph(pre_title_text, pre_title_style)
-    preP.drawOn(c, x, y)
-    pre_height = preP.wrap(width, float('inf'))[1]
+    preP.wrap(width, float('inf'))  # Calcula l'amplada i l'altura
+    pre_height = preP.height
 
     # Afegir títol
     p = Paragraph(title_text, style)
-    _, height = p.wrap(width, float('inf'))
-    p.drawOn(c, x, y - pre_height - height)
+    p.wrap(width, float('inf'))  # Calcula l'amplada i l'altura
+    title_height = p.height
+
+    # Dibuixar els textos
+    preP.drawOn(c, x, y)
+    p.drawOn(c, x, y - pre_height - title_height)
     
-    return pre_height + height
+    return pre_height + title_height
 
 # Carregar dades
 data = None
