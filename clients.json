@@ -16,16 +16,16 @@
         },
         "calendari_pagaments": {
           "Gener": "Regular",
-          "Febrer": "Bonificació 20%",
+          "Febrer": "Bonificacio 20%",
           "Març": "Regular",
           "Abril": "Exempt",
           "Maig": "Regular",
-          "Juny": "Bonificació 10%",
+          "Juny": "Bonificacio 10%",
           "Juliol": "Regular",
           "Agost": "Exempt",
-          "Setembre": "Bonificació 15%",
+          "Setembre": "Bonificacio 15%",
           "Octubre": "Regular",
-          "Novembre": "Bonificació 5%",
+          "Novembre": "Bonificacio 5%",
           "Desembre": "Regular"
         }
       },
@@ -43,18 +43,18 @@
           "total": 59.00
         },
         "calendari_pagaments": {
-          "Gener": "Bonificació 10%",
+          "Gener": "Bonificacio 10%",
           "Febrer": "Regular",
           "Març": "Regular",
           "Abril": "Exempt",
           "Maig": "Regular",
-          "Juny": "Bonificació 25%",
+          "Juny": "Bonificacio 25%",
           "Juliol": "Regular",
           "Agost": "Exempt",
           "Setembre": "Regular",
-          "Octubre": "Bonificació 5%",
+          "Octubre": "Bonificacio 5%",
           "Novembre": "Regular",
-          "Desembre": "Bonificació 15%"
+          "Desembre": "Bonificacio 15%"
         }
       },
       {
@@ -72,14 +72,14 @@
           "Gener": "Regular",
           "Febrer": "Regular",
           "Març": "Regular",
-          "Abril": "Bonificació 15%",
+          "Abril": "Bonificacio 15%",
           "Maig": "Regular",
           "Juny": "Exempt",
-          "Juliol": "Bonificació 10%",
+          "Juliol": "Bonificacio 10%",
           "Agost": "Regular",
           "Setembre": "Regular",
           "Octubre": "Regular",
-          "Novembre": "Bonificació 20%",
+          "Novembre": "Bonificacio 20%",
           "Desembre": "Regular"
         }
       },
@@ -100,16 +100,16 @@
         "calendari_pagaments": {
           "Gener": "Exempt",
           "Febrer": "Regular",
-          "Març": "Bonificació 30%",
+          "Març": "Bonificacio 30%",
           "Abril": "Regular",
-          "Maig": "Bonificació 5%",
+          "Maig": "Bonificacio 5%",
           "Juny": "Regular",
           "Juliol": "Regular",
-          "Agost": "Bonificació 10%",
+          "Agost": "Bonificacio 10%",
           "Setembre": "Regular",
           "Octubre": "Exempt",
           "Novembre": "Regular",
-          "Desembre": "Bonificació 25%"
+          "Desembre": "Bonificacio 25%"
         }
       },
       {
@@ -127,17 +127,17 @@
         },
         "calendari_pagaments": {
           "Gener": "Regular",
-          "Febrer": "Bonificació 15%",
+          "Febrer": "Bonificacio 15%",
           "Març": "Exempt",
           "Abril": "Regular",
           "Maig": "Regular",
-          "Juny": "Bonificació 20%",
+          "Juny": "Bonificacio 20%",
           "Juliol": "Exempt",
           "Agost": "Regular",
-          "Setembre": "Bonificació 5%",
+          "Setembre": "Bonificacio 5%",
           "Octubre": "Regular",
           "Novembre": "Regular",
-          "Desembre": "Bonificació 10%"
+          "Desembre": "Bonificacio 10%"
         }
       }
     ]

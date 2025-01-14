@@ -97,7 +97,6 @@ def draw_footer(c, page_number, x_left, x_right):
     c.drawString(x_left, 30, f"Pàgina {page_number}")
     current_date = "2024/12/8"
     c.drawString(x_right, 30, f"Data: {current_date}")
-
 def draw_calendar(c, client_data, x, y, width):
     current_y = y
     draw_titles(
@@ -115,18 +114,18 @@ def draw_calendar(c, client_data, x, y, width):
     for month, status in client_data["calendari_pagaments"].items():
         if status == "Regular":
             c.setFillColor(colors.white)
-        elif "Bonificació" in status:
-            c.setFillColor(colors.lightblue)
-        elif status == "Exempt":
+        elif "Bonificacio" in status:
+            c.setFillColor(colors.lightblue) #NO DETECTA AQUEST ELIF 
+            #CORREGIT, ERA EL ACCENT DE BONIFICACIÓ
+        else:
             c.setFillColor(colors.lightgreen)
-
         c.rect(x, current_y - 20, width, 20, stroke=0, fill=1)
-        c.setFillColor(colors.black)
+        c.setFillColor(colors.black) 
         c.drawString(x + 5, current_y - 15, f"{month}: {status}")
-
         current_y -= 30
 
     return current_y
+
 
 data = None
 cargar_json()
@@ -135,7 +134,7 @@ c = canvas.Canvas(filename, pagesize=A4)
 page_width, page_height = A4
 margin = 50
 width = page_width - (2 * margin)
-
+# -----------------------------------------------------------------
 txt_template = """
 Estimad@ {nom} {cognom},<br/><br/>
 Ens dirigim a vostè per presentar-li el detall de la seva factura corresponent al mes de {mes}:<br/><br/>
@@ -148,7 +147,7 @@ Total a pagar: {total} €<br/><br/>
 Recordi que pot consultar els detalls de les seves factures i gestionar els seus pagaments a través de l'àrea de clients al nostre lloc web o contactar amb el nostre servei d'atenció al client al {telefon}.<br/><br/>
 Gràcies per confiar en nosaltres.<br/><br/>
 """
-
+# ---------------------------------------------------------------------
 for entrada in data["clients"]:
     current_y = page_height - margin
 
@@ -169,7 +168,7 @@ for entrada in data["clients"]:
         cognom=entrada["cognom"],
         mes=entrada["mes_factura"],
         quota=entrada["detall_cobraments"]["quota_basica"],
-        serveis="no",
+        serveis=" · Internet Extra",
         impostos=entrada["detall_cobraments"]["impostos"],
         total=entrada["detall_cobraments"]["total"],
         telefon="NULL"
