@@ -73,13 +73,12 @@ width = page_width - (2 * margin)
 
 # Iterar sobre cada client i crear una pàgina nova
 for entrada in data["clients"]:
-    current_y = page_height - 50  # Posició inicial del títol a cada pàgina
+    current_y = page_height - 50
 
-    # Escriure el pre-títol i el títol
     draw_titles(
         c,
-        pre_title_text="Factura",  # Pre-títol
-        title_text=f"{entrada['nom']} {entrada['cognom']} ({entrada['companyia']})",  # Títol
+        pre_title_text="Factura",
+        title_text=f"{entrada['companyia']}",
         style=styles["MainTitle"],
         pre_title_style=styles["PreTitle"],
         x=margin,
@@ -87,8 +86,6 @@ for entrada in data["clients"]:
         width=width
     )
     
-    # Canviar a una nova pàgina
     c.showPage()
 
-# Tancar i guardar el PDF
 c.save()
