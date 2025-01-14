@@ -1,7 +1,7 @@
 {
     "clients": [
       {
-        "companyia": "SuperPhone",
+        "companyia": "SUPERPHONE",
         "nom": "Anna",
         "cognom": "Garcia",
         "mes_factura": "Gener",
@@ -30,7 +30,7 @@
         }
       },
       {
-        "companyia": "CallMeNow",
+        "companyia": "CALLMENOW",
         "nom": "Joan",
         "cognom": "Martínez",
         "mes_factura": "Febrer",
@@ -58,7 +58,7 @@
         }
       },
       {
-        "companyia": "MonoPhonica",
+        "companyia": "MONOPHONICA",
         "nom": "Maria",
         "cognom": "Lopez",
         "mes_factura": "Març",
@@ -84,7 +84,7 @@
         }
       },
       {
-        "companyia": "NewLines",
+        "companyia": "NEWLINES",
         "nom": "Pere",
         "cognom": "Fernandez",
         "mes_factura": "Abril",
